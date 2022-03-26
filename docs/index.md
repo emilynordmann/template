@@ -1,8 +1,8 @@
 --- 
-title: "Template" # edit
+title: "Intro to Data Viz workshop" # edit
 #subtitle: "optional" 
-author: "psyTeachR Team" # edit
-date: "2021-10-14"
+author: "Emily Nordmann" # edit
+date: "2022-03-26"
 site: bookdown::bookdown_site
 documentclass: book
 classoption: oneside # for PDFs
@@ -11,9 +11,9 @@ bibliography: [book.bib, packages.bib]
 csl: include/apa.csl
 link-citations: yes
 description: | # edit
-  The book template for the psyTeachR books.
-url: https://psyteachr.github.io/template # edit
-github-repo: psyteachr/template # edit
+  The accompany book for the PsyTeachR intro to data viz workshop.
+url: https://psyteachr.github.io/workshop-dataviz # edit
+github-repo: psyteachr/workshop-dataviz # edit
 cover-image: images/logos/logo.png # replace with your logo
 apple-touch-icon: images/logos/apple-touch-icon.png # replace with your logo
 apple-touch-icon-size: 180
@@ -27,29 +27,18 @@ favicon: images/logos/favicon.ico # replace with your logo
 <div class="small_right"><img src="images/logos/logo.png" 
      alt="ADS Hex Logo" /></div>
 
+Before the workshop it is necessary to work through some prep tasks to ensure that you are ready to go.
 
+* If you don't currently have R or RStudio installed, please work through Chapter\ \@ref(installing-r).
+* If you have R and/or RStudio installed, please skip to Section\  \@ref(rstudio-settings) and update to the latest version before the workshop.
+* If you have technical issues and cannot install R and RStudio on your machine (e.g., if you don't have admin rights), please sign-up for an [RStudio Cloud](https://rstudio.cloud/) account.
 
-* [PDF version](template.pdf)
-* [ePub version](template.epub)
-* [Kindle version](template.mobi)
+Once you've done one of the above, work through Chapter\ \@ref(intro) which will introduce you to some basic programming terminology and install the packages we need for the workshop. Depending upon your familiarity with R, this should take 1-2 hours.
 
-After copying this template to your project, you will need to change the information in the `CITATION` and `DESCRIPTION` files, as well as update the YAML header of `book/index.Rmd` and `book/_output.yml`. Update site-specific logos in `book/images/logos/`.
+**Regardless of what set-up you need to do, before you join the workshop, please ensure you have completed the Workshop Set-up Check in Chapter\ \@ref(workshop-prep). If it works, you're good to go.**
 
-If you are not part of the psyTeachR group, please edit the Google Analytics ID in `include/google-analytics.html` or comment out the relevant line in `book/_output.yml`. 
+The materials from this workshop are adapted from:
 
-Render the book using the code in `_render.R`.
+* [Nordmann, E. & DeBruine, L. (2022). Applied Data Skills (1.0). Zenodo. https://doi.org/10.5281/zenodo.6365078](https://psyteachr.github.io/ads-v1/)
 
-## Changes
-
-### Version 2.1 2021-10-14
-
-* Updated webexercises styles to include a green check and red X for correct and incorrect responses.
-    - `book/include/webex.css` (replace)
-    - `book/include/webex.js` (replace)
-* Changed the name of `book/include/header.html` to `book/include/google-analytics.html` to better reflect its purpose. 
-    - `book/include/header.html` (delete)
-    - `book/include/google-analytics.html` (add)
-    - `book/_output.yml` (change line 10)
-* Updated rendering functions to not render pdf epub or mobi by default
-    - `_render.R` (replace)
-    - `Makefile` (add)
+* [Nordmann, E., McAleer, P., Toivo, W., Paterson, H. & DeBruine, L. (accepted). Data visualisation using R, for researchers who don't use R. Advances in Methods and Practices in Psychological Science.](https://psyteachr.github.io/introdataviz/)
